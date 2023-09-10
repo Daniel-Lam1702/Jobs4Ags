@@ -1,0 +1,20 @@
+.job-item {
+    width: 350px; 
+    border: 1px solid #500000;
+    padding: 4%;
+    margin: 2%;
+    border-radius: 10px 10px 10px 10px;
+    text-align: left;
+}
+.job-item h3 {
+    padding-left: 10px;
+}
+.location{
+    display: flex;
+}
+.job-item a{
+    color: white;
+    padding: 10px;
+    background-color: #500000;
+    margin-top: 4px;
+}
