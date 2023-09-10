@@ -3,14 +3,16 @@ const jobType = {"FULLTIME":"Full-Time","CONTRACTOR" : "Contractor", "INTERN": "
 const Job = ({job}) => {
     return (<div class = "job-item">
         <h3>{job["job_title"]}</h3>
-        {verify(job["employer_name"])}
-        <div class= "location">{verify(job["City"])}<p>, </p>{verify(job["State"])} </div>
-        <div>
+        <div class = "job-body">
+            {verify(job["employer_name"])}
+            <div class= "location">{verify(job["City"])}<p>, </p>{verify(job["State"])} </div>
+        <div class = "squares">
             {verify(job["job_employment_type"])} 
-            {verify(job["date_post"])}           
+            {verify(job["date_post"])}              
         </div>
-        {smallDescription(job['job_description'])}
-        <a href={job["job_apply_link"]} target="_blank" rel="noopener noreferrer">Apply now</a>
+            {smallDescription(job['job_description'])}
+            <a href={job["job_apply_link"]} target="_blank" rel="noopener noreferrer">Apply now</a>
+        </div>
         <h3>____________________________________________</h3>
     </div>)
 }
