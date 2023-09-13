@@ -17,9 +17,9 @@ async function fetchJobs({ searchQuery = "Software Engineering", datePosted, emp
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '7bd9ea43d1msh6ce2305c81b6161p1e5f51jsn5d1b5c3e1bb2',
+      'X-RapidAPI-Key': 'secret-api-key',
       'X-RapidAPI-Host': 'jsearch.p.rapidapi.com',
-    },
+    }, //Create a secret api key on rapidapi. Search for Jsearch
   };
 
   try {
