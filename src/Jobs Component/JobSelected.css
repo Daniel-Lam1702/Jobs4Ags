@@ -1,0 +1,35 @@
+.job-selection {
+    border: 1px solid #500000;
+    padding: 2%;
+    border-radius: 10px; /* You can simplify this */
+    text-align: left;
+    position: fixed;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 400px; /* Set a fixed height */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.description {
+    height: 150px; /* Set a max height for scrollability */
+    width: 440px;
+    overflow-y: auto;
+}
+
+.job-employer-name {
+    margin-left: 0px; /* You can omit this if not needed */
+}
+.apply-button{
+    margin-top: 20px;
+    margin-bottom: -5px;
+    margin-left: 65%;
+}
+.apply-button a{
+    color: white;
+    padding: 10px;
+    background-color: #500000;
+    margin-bottom: -4px;
+    border-radius: 10px 10px 10px 10px;
+}

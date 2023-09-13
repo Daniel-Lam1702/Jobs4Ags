@@ -4,7 +4,7 @@ import DropdownMenu from './DropDown';
 import DropdownTextInput from './DropDownTextInput';
 import MultipleChoiceDropdown from './MultipleChoice';
 import "./Filters.css";
-function Filters({datePosted, setDatePosted, employmentType, setEmployment, location, setLocation, remoteJobsOnly, setRemote, experience, setExperience, getNewJobs}) {
+function Filters({datePosted, setDatePosted, employmentType, setEmployment, location, setLocation, remoteJobsOnly, setRemote, experience, setExperience, updateSearch}) {
   return (
     <div class = "filters">
       <div class = "filters-container">
@@ -15,6 +15,7 @@ function Filters({datePosted, setDatePosted, employmentType, setEmployment, loca
         < DropdownMenu label = "Remote Jobs" values = {[{ key: true, value: "Yes" }, { key: false, value: "No" }]} selection = {remoteJobsOnly} method = {setRemote}/>
         < DropdownTextInput label = "Location" location = {location} setLocation={setLocation} />
         < MultipleChoiceDropdown label = "Experience" values = {[{ key: "under_3_years_experience", value: "Under 3 years of experience" }, { key: "more_than_3_years_experience", value: "More than 3 years of experience" }, { key: "no_experience", value: "No experience" }, { key: "no_degree", value: "No degree" }]} selection = {experience} method = {setExperience}/>
+        <button style={{cursor:'pointer'}} className='apply-filter-button' onClick={updateSearch}>Apply Filter</button>
       </div>
     </div>
   );

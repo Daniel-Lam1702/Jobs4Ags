@@ -1,0 +1,31 @@
+.filters{
+    margin-left:2%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+.filters-container{
+    border: 1px solid #500000;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+}
+.title{
+    margin-bottom: -25px;
+    margin-top: -1%;
+    font-size: x-large;
+}
+.subtitle{
+    font-size: large;
+}
+.apply-filter-button{
+    margin-top: 10px;
+    height: 35px;
+    width: 100px;
+    color:white;
+    background-color: #500000;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Otomanopee One';
+}

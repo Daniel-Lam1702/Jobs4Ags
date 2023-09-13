@@ -1,0 +1,26 @@
+.jobs {
+    width: 30%; /* Set the width of the container */
+    margin-top: 2%;
+    padding: 4px;
+}
+.jobs h2{
+  margin-top: 0;
+}
+.jobs-selected{
+  width: 45%; /* Set the width of the container */
+  margin: 10%;
+  padding: 4px;
+}
+.selected-page {
+  background-color: white !important; /* Set your desired background color for the selected page */
+  color: #500005 !important; /* Set your desired text color for the selected page */
+  border-color: rgba(255, 255, 255, 0.514) !important;
+}
+.pages button {
+  background-color: #500005;
+  color: white;
+  margin: 2px;
+  border-color: #500005;
+  border-radius: 3px 3px 3px 3px;
+}
+  
