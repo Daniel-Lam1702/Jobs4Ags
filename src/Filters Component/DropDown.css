@@ -1,6 +1,7 @@
 .drop-down{
-    width: 150px;
+    width: 90%;
 }
 .formControl{
     width: 100%;
+    font-size: 0.5rem;
 }

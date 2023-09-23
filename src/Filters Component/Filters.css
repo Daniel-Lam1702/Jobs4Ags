@@ -1,21 +1,60 @@
-.filters{
-    margin-left:2%;
-    margin-top: 2%;
-    margin-right: 2%;
+@media (max-width: 680px) {
+    .title{
+        font-size: 1.25rem !important;
+    }
+    .filters-container h2{
+        font-size:  1rem !important;
+    }
+    .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+        font-size: 0.75rem !important;
+    }
+    .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root{
+        font-size: 0.75rem !important;
+    }
+    .filters-container{
+        padding: 10px 10px !important;
+    }
 }
+@media(max-width: 512px){
+    .pages button{
+        font-size: 0.75rem !important;
+    }
+    .apply-filter-button{
+        font-size: 0.75rem !important;
+    }
+}
+.selected-page {
+    background-color: white !important;
+    color: #500005 !important;
+    border-color: rgba(255, 255, 255, 0.514) !important;
+}
+.pages button {
+    background-color: #500005;
+    color: white;
+    margin: 2px;
+    border-color: #500005;
+    border-radius: 3px 3px 3px 3px;
+}
+/* Fixed filters styles */
+.filters {
+    width: 30%;
+    /* Ensure that the filters cover the entire viewport height */
+    height: 100vh;
+    padding: 2% 2% 10px; /* Adjust padding as needed */
+}
+
 .filters-container{
     border: 1px solid #500000;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+    padding: 10px 30px;
     justify-content: center;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 .title{
-    margin-bottom: -25px;
-    margin-top: -1%;
-    font-size: x-large;
+    font-size: 1.75rem;
+    border-bottom: 1px solid #000;
+}
+.filters-container h2{
+    font-size:  1.25rem;
 }
 .subtitle{
     font-size: large;

@@ -1,38 +1,71 @@
+/* Define a CSS variable for base font size in the root element (e.g., in your main CSS file) */
+/* Use the rem unit for spacing based on the base font size */
+@media (width <= 613px) {
+    .job-item h3{
+        font-size: 0.875em !important;
+    }
+    .job-item {
+        padding: 0.3em !important;
+        margin: 0.5em !important;
+    }
+    .job-body p{
+        font-size: 0.75rem;
+    }
+    .apply-button{
+        padding: 0.75em !important;
+    }
+    .job-item p, .job-item h3{
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+    }
+}
 .job-item {
-    width: 350px; 
+    width: auto;
     border: 1px solid #500000;
-    padding: 4%;
-    margin-bottom: 3%;
-    border-radius: 10px 10px 10px 10px;
+    padding: 0.5rem; 
+    margin: 1rem; /* Adjust the margin as needed */
+    border-radius: 1rem; /* Adjust the border radius as needed */
     text-align: left;
-    cursor: pointer;
 }
+  
 .job-item h3 {
-    padding-left: 10px;
+    padding-left: 1rem;
 }
-.location{
+  
+.location {
     display: flex;
+    align-items: center; /* Vertically center align the location */
 }
-.job-item a{
+  
+.apply-button{
     color: white;
-    padding: 10px;
+    padding: 1rem; 
     background-color: #500000;
-    margin-bottom: -4px;
-    margin-left: 240px;
-    border-radius: 10px 10px 10px;
+    border-radius: 1rem;
+    margin-top: 1rem; /* Adjust the margin as needed */
+    margin-right: 1rem;
+    display: inline-block; /* Ensure the button doesn't take full width */
 }
-.job-body{
-    margin-left: 10px
+
+.apply{
+    text-align: right;
 }
-.squares p{
+
+.job-body {
+    margin-left: 1rem; /* Adjust the margin as needed */
+}
+
+
+.squares p {
     color: black;
-    padding: 5px;
-    width: 25%;
+    padding: 0.5rem; 
     background-color: #e1e1e1;
-    border-radius: 5px 5px 5px 5px;
-}
-.squares{
-    display: flex;
-    gap: 10px;
+    border-radius: 0.5rem;
     text-align: center;
+    margin-right: 1rem; /* Add spacing between squares */
+}
+
+.squares {
+    display: flex;
+    align-items: center;
 }

@@ -85,6 +85,8 @@ function App() {
       <Header textInput={textInput} handleTextInputChange={handleTextInputChange} displayJobs={() => {setPage(1); displayJobs();}}/>
       <div class="body">
         <Filters
+            page={page}
+            setPage={setPage}
             datePosted={datePosted}
             setDatePosted={setDatePosted}
             employmentType={employmentType}
@@ -96,8 +98,9 @@ function App() {
             experience={experience}
             setExperience={setExperience}
             updateSearch = {() => {setPage(1); displayJobs();}}
+            updatePageSearch = {() => displayJobs()}
         />
-        <JobsComponent updateSearch = {displayJobs} page = {page} setPage = {setPage} jobs = {jobs} search={textInput}/>        
+        <JobsComponent jobs = {jobs} search={textInput}/>        
       </div>
     </>
   );
